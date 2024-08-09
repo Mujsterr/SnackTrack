@@ -53,7 +53,6 @@ export default function Home() {
 	const [alertMessage, setAlertMessage] = useState("");
 	const [aiText, setAiText] = useState("");
 
-	console.log(user);
 	const updateInventory = useCallback(async () => {
 		if (!user) return;
 		const userItemsCollection = collection(
